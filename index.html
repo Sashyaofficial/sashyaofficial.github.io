@@ -1,102 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Connecting Ancient Worlds</title>
+  <meta name="description" content="Echoes of the Ancient East - A Journey Through Ancient Civilizations">
+  <title>Echoes of the Ancient East</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@google/model-viewer@1.0.0/dist/model-viewer.js"></script>
 </head>
-
 <body>
   <!-- Header -->
-  <header class="header">
+  <header>
     <div class="container">
-      <div class="logo">Ancient Worlds</div>
-      <nav class="nav">
-        <ul class="nav-links">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#topics">Topics</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
+      <h1>Echoes of the Ancient East</h1>
+      <nav>
+        <ul>
+          <li><a href="#anyang">Anyang</a></li>
+          <li><a href="#bodhisattvas">Bodhisattvas</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#virtual-exhibition">Virtual Exhibition</a></li>
+          <li><a href="#culture-insights">Cultural Insights</a></li>
         </ul>
-        <button class="hamburger-menu" onclick="toggleMenu()">☰</button>
       </nav>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section id="hero" class="hero">
-    <div class="container">
-      <h1>Uncover the Past</h1>
-      <p>Explore the profound connections between civilizations, spirituality, and art.</p>
-      <a href="#about" class="btn-primary">Explore More</a>
+  <!-- Hero Section with Parallax Effect -->
+  <section class="hero parallax">
+    <div class="hero-text">
+      <h2>Discover Ancient Civilizations</h2>
+      <p>Explore the wonders and history of the Ancient East.</p>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <div class="container">
-      <h2>About This Project</h2>
-      <p>
-        This project showcases the timeless beauty of human history through Anyang's ruins, Bodhisattvas' art, and ancient
-        currencies. Join us in connecting the ancient world with the present.
-      </p>
-    </div>
-  </section>
+  <!-- Anyang Section -->
+<section id="anyang" class="section">
+  <div class="container">
+    <h2>Anyang - The Cradle of Ancient China</h2>
+    <p>Anyang was one of the ancient capitals of the Shang dynasty. It holds a key place in Chinese archaeology due to the rich burial sites and oracle bone inscriptions found there.</p>
+    <p>Artifacts like jade carvings, bronze vessels, and oracle bones provide invaluable insight into early Chinese civilization, religion, and governance.</p>
 
-  <!-- Topics Section -->
-  <section id="topics" class="topics">
+    <!-- Interactive 3D Model Section -->
+    <div class="interactive-artefact">
+      <model-viewer src="models/anyang-site.glb" alt="Anyang Archaeological Site" auto-rotate camera-controls ar></model-viewer>
+    </div>
+
+    <!-- Images Section -->
+    <div class="anyang-images">
+      <div class="main-image">
+        <img src="images/main-anyang-image.jpg" alt="Main Anyang Image" />
+      </div>
+      <div class="other-images">
+        <div class="image-item">
+          <img src="images/anyang1.jpg" alt="Anyang Artifact 1" />
+        </div>
+        <div class="image-item">
+          <img src="images/anyang2.jpg" alt="Anyang Artifact 2" />
+        </div>
+        <div class="image-item">
+          <img src="images/anyang3.jpg" alt="Anyang Artifact 3" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Bodhisattvas Section -->
+<section id="bodhisattvas" class="section">
+  <div class="container">
+    <h2>The Bodhisattvas - Guardians of Wisdom</h2>
+    <p>Bodhisattvas are revered figures in Buddhist traditions, embodying compassion and enlightenment. They are central to the teachings of Mahayana Buddhism.</p>
+    <p>The figure of Avalokiteshvara, for example, represents infinite compassion. Through symbolic art, such as sculptures and paintings, Bodhisattvas help guide others to spiritual liberation.</p>
+
+    <!-- Interactive 3D Model Section -->
+    <div class="interactive-artefact">
+      <model-viewer src="models/bodhisattvas-statue.glb" alt="Bodhisattva Statue" auto-rotate camera-controls ar></model-viewer>
+    </div>
+
+    <!-- Images Section -->
+    <div class="bodhisattvas-images">
+      <div class="main-image">
+        <img src="main-bodhisattvas-image.jpg" alt="Main Bodhisattvas Image" />
+      </div>
+      <div class="other-images">
+        <div class="image-item">
+          <img src="bodhisattvas-placeholder1.jpg" alt="Bodhisattvas Artifact 1" />
+        </div>
+        <div class="image-item">
+          <img src="bodhisattvas-placeholder2.jpg" alt="Bodhisattvas Artifact 2" />
+        </div>
+        <div class="image-item">
+          <img src="bodhisattvas-placeholder3.jpg" alt="Bodhisattvas Artifact 3" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Smithsonian's National Numismatic Collection -->
+<section id="bodhisattvas" class="section">
+  <div class="container">
+    <h2>The Bodhisattvas - Guardians of Wisdom</h2>
+    <p>Bodhisattvas are revered figures in Buddhist traditions, embodying compassion and enlightenment. They are central to the teachings of Mahayana Buddhism.</p>
+    <p>The figure of Avalokiteshvara, for example, represents infinite compassion. Through symbolic art, such as sculptures and paintings, Bodhisattvas help guide others to spiritual liberation.</p>
+
+    <!-- Interactive 3D Model Section -->
+    <div class="interactive-artefact">
+      <model-viewer src="models/bodhisattvas-statue.glb" alt="Bodhisattva Statue" auto-rotate camera-controls ar></model-viewer>
+    </div>
+
+    <!-- Images Section -->
+    <div class="bodhisattvas-images">
+      <div class="main-image">
+        <img src="main-bodhisattvas-image.jpg" alt="Main Bodhisattvas Image" />
+      </div>
+      <div class="other-images">
+        <div class="image-item">
+          <img src="bodhisattvas-placeholder1.jpg" alt="Bodhisattvas Artifact 1" />
+        </div>
+        <div class="image-item">
+          <img src="bodhisattvas-placeholder2.jpg" alt="Bodhisattvas Artifact 2" />
+        </div>
+        <div class="image-item">
+          <img src="bodhisattvas-placeholder3.jpg" alt="Bodhisattvas Artifact 3" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Timeline Section -->
+  <section id="timeline" class="section">
     <div class="container">
-      <h2>Topics Covered</h2>
-      <div class="topics-grid">
-        <div class="topic-card">
-          <img src="images/anyang.jpg" alt="Anyang">
-          <h3>Anyang</h3>
-          <p>Explore the Shang Dynasty's ancient city and its groundbreaking artifacts.</p>
+      <h2>Interactive Timeline of Ancient Eastern History</h2>
+      <div class="timeline-container">
+        <div class="timeline-item" data-year="500 BC">
+          <h3>500 BC</h3>
+          <p>Early records of the Shang dynasty emerge from Anyang.</p>
         </div>
-        <div class="topic-card">
-          <img src="images/bodhisattva.jpg" alt="Bodhisattva">
-          <h3>Bodhisattvas</h3>
-          <p>Discover Avalokiteshvara's evolution and its spiritual influence across Asia.</p>
+        <div class="timeline-item" data-year="300 BC">
+          <h3>300 BC</h3>
+          <p>Bodhisattvas begin to appear in Buddhist art.</p>
         </div>
-        <div class="topic-card">
-          <img src="images/numismatics.jpg" alt="Numismatics">
-          <h3>Numismatics</h3>
-          <p>Dive into the world of coins and currencies from ancient civilizations.</p>
+        <div class="timeline-item" data-year="100 AD">
+          <h3>100 AD</h3>
+          <p>The influence of Buddhist thought spreads across Asia.</p>
+        </div>
+        <div class="timeline-item" data-year="618-907 AD">
+          <h3>Tang Dynasty</h3>
+          <p>China flourishes as a cultural and economic hub, influencing Japan and Korea.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Gallery -->
-  <section id="gallery" class="gallery">
+  <!-- Cultural Insights Section -->
+  <section id="culture-insights" class="section">
     <div class="container">
-      <h2>Gallery</h2>
-      <div class="gallery-grid">
-        <img src="images/anyang1.jpg" alt="Anyang Artifact">
-        <img src="images/bodhisattva1.jpg" alt="Bodhisattva Sculpture">
-        <img src="images/numismatics1.jpg" alt="Historical Coin">
+      <h2>Cultural Insights from the Ancient East</h2>
+      <p>The East has long been home to profound philosophical, spiritual, and artistic traditions. Learn more about how ideas from ancient China, India, and beyond shaped the cultures we know today.</p>
+      <div class="insight-item">
+        <h3>Confucianism and Daoism</h3>
+        <p>Confucianism emphasizes morality, family loyalty, and social harmony, while Daoism encourages living in harmony with the Dao, or "the way." These philosophies have profoundly influenced East Asian societies for centuries.</p>
+      </div>
+      <div class="insight-item">
+        <h3>The Spread of Buddhism</h3>
+        <p>Buddhism, originating in India, spread to China, Korea, and Japan. Its teachings of compassion, non-violence, and mindfulness have shaped spiritual practices and artistic expression throughout the East.</p>
+      </div>
+      <div class="insight-item">
+        <h3>Art and Architecture</h3>
+        <p>East Asian art, particularly in China and Japan, is rich in symbolism. Architectural wonders, such as the Great Wall of China and the Buddhist cave temples of Dunhuang, are testaments to the advanced cultures that produced them.</p>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer>
     <div class="container">
-      <p>&copy; 2024 Ancient Worlds | Made for MMDD 226</p>
-      <div class="social-links">
-        <a href="#">Instagram</a>
-        <a href="#">LinkedIn</a>
-        <a href="#">Facebook</a>
-      </div>
+      <p>&copy; 2024 Echoes of the Ancient East. All Rights Reserved.</p>
+      <ul>
+        <li><a href="mailto:info@echoesoftheancienteast.com">Contact Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
     </div>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script src="scripts.js"></script>
 </body>
-
 </html>
