@@ -4,95 +4,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Connecting Ancient Worlds</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <!-- Header -->
-  <header>
-    <div class="logo">Connecting Ancient Worlds</div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#topics">Topics</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <header class="header">
+    <div class="container">
+      <div class="logo">Ancient Worlds</div>
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#topics">Topics</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="hamburger-menu" onclick="toggleMenu()">☰</button>
+      </nav>
+    </div>
   </header>
 
   <!-- Hero Section -->
-  <section id="hero">
-    <h1>Connecting Ancient Worlds</h1>
-    <p>Discover the timeless legacy of Anyang, Bodhisattvas, and Numismatics.</p>
-    <div class="hero-image"></div>
+  <section id="hero" class="hero">
+    <div class="container">
+      <h1>Uncover the Past</h1>
+      <p>Explore the profound connections between civilizations, spirituality, and art.</p>
+      <a href="#about" class="btn-primary">Explore More</a>
+    </div>
   </section>
 
   <!-- About Section -->
-  <section id="about">
-    <h2>About This Project</h2>
-    <p>
-      This project explores ancient connections through history, art, and culture. 
-      By delving into Anyang's ancient city, Bodhisattvas' spiritual evolution, and 
-      the intricate designs of numismatics, we aim to bridge the ancient and modern worlds.
-    </p>
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About This Project</h2>
+      <p>
+        This project showcases the timeless beauty of human history through Anyang's ruins, Bodhisattvas' art, and ancient
+        currencies. Join us in connecting the ancient world with the present.
+      </p>
+    </div>
   </section>
 
   <!-- Topics Section -->
-  <section id="topics">
-    <h2>Topics Covered</h2>
-
-    <!-- Anyang Section -->
-    <div class="topic">
-      <h3>Anyang: China’s Ancient City of Kings</h3>
-      <img src="images/anyang.jpg" alt="Anyang">
-      <p>
-        Anyang is one of the cradles of Chinese civilization, home to the Shang Dynasty's capital. 
-        It holds archaeological treasures like oracle bones, early forms of writing, and bronze artifacts.
-      </p>
-    </div>
-
-    <!-- Bodhisattvas Section -->
-    <div class="topic">
-      <h3>Bodhisattva Avalokiteshvara</h3>
-      <img src="images/bodhisattva.jpg" alt="Bodhisattva Avalokiteshvara">
-      <p>
-        Avalokiteshvara, the Bodhisattva of Compassion, represents the spiritual ideals of Buddhism. 
-        From India to East Asia, the figure evolved, influencing art and religious practice.
-      </p>
-    </div>
-
-    <!-- Numismatics Section -->
-    <div class="topic">
-      <h3>Smithsonian’s National Numismatic Collection</h3>
-      <img src="images/numismatics.jpg" alt="Numismatics">
-      <p>
-        This collection showcases coins, banknotes, and other currency from around the world. 
-        It reflects economic history and the artistry of monetary systems.
-      </p>
+  <section id="topics" class="topics">
+    <div class="container">
+      <h2>Topics Covered</h2>
+      <div class="topics-grid">
+        <div class="topic-card">
+          <img src="images/anyang.jpg" alt="Anyang">
+          <h3>Anyang</h3>
+          <p>Explore the Shang Dynasty's ancient city and its groundbreaking artifacts.</p>
+        </div>
+        <div class="topic-card">
+          <img src="images/bodhisattva.jpg" alt="Bodhisattva">
+          <h3>Bodhisattvas</h3>
+          <p>Discover Avalokiteshvara's evolution and its spiritual influence across Asia.</p>
+        </div>
+        <div class="topic-card">
+          <img src="images/numismatics.jpg" alt="Numismatics">
+          <h3>Numismatics</h3>
+          <p>Dive into the world of coins and currencies from ancient civilizations.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Gallery Section -->
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery-grid">
-      <img src="images/anyang1.jpg" alt="Anyang Artifact">
-      <img src="images/bodhisattva1.jpg" alt="Bodhisattva Sculpture">
-      <img src="images/numismatics1.jpg" alt="Historical Coin">
-      <img src="images/anyang2.jpg" alt="Oracle Bones">
-      <img src="images/bodhisattva2.jpg" alt="Avalokiteshvara Art">
-      <img src="images/numismatics2.jpg" alt="Rare Banknote">
+  <!-- Gallery -->
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <img src="images/anyang1.jpg" alt="Anyang Artifact">
+        <img src="images/bodhisattva1.jpg" alt="Bodhisattva Sculpture">
+        <img src="images/numismatics1.jpg" alt="Historical Coin">
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 Connecting Ancient Worlds | Created for MMDD 226 Assignment</p>
-    <div class="footer-links">
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms of Use</a>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Ancient Worlds | Made for MMDD 226</p>
+      <div class="social-links">
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Facebook</a>
+      </div>
     </div>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>

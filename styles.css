@@ -1,186 +1,114 @@
-/* Global Styles */
+/* General Styles */
 body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #F8F9FA;
-}
-
-/* Header */
-header {
-  background: #00509E;
-  color: white;
-  padding: 15px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-header .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
+  font-family: 'Poppins', sans-serif;
+  color: #00274D;
   margin: 0;
   padding: 0;
 }
 
-.nav-links li {
-  margin: 0 15px;
+h1, h2, h3 {
+  margin: 0;
+  color: #00274D;
 }
 
-.nav-links a {
-  color: white;
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+a {
   text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease;
+  color: inherit;
 }
 
-.nav-links a:hover {
-  color: #A9D6E5;
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+.header {
+  background: #00274D;
+  color: #FFFFFF;
+  padding: 15px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li a {
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.hamburger-menu {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
 }
 
 /* Hero Section */
-#hero {
+.hero {
+  background: linear-gradient(to bottom, #00274D, #4C72A8);
+  color: #FFFFFF;
   text-align: center;
-  padding: 60px 20px;
-  background: linear-gradient(to bottom, #00509E, #A9D6E5);
-  color: white;
+  padding: 100px 20px;
 }
 
-#hero h1 {
-  font-size: 2.8rem;
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.btn-primary {
+  background: #FFD700;
+  color: #00274D;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
   font-weight: bold;
 }
 
-.hero-image {
-  width: 100%;
-  height: 300px;
-  background: #A9D6E5;
-  border-radius: 10px;
-  margin: 20px auto;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Section Styles */
-section {
-  padding: 40px 20px;
-  margin: 20px auto;
-  max-width: 1200px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-section h2 {
-  font-size: 2rem;
-  color: #00509E;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-section p {
-  text-align: justify;
-  color: #555;
-  font-size: 1rem;
-  line-height: 1.8;
-}
-
-.content {
+/* Topics */
+.topics-grid {
   display: flex;
-  align-items: center;
   gap: 20px;
-  flex-wrap: wrap;
 }
 
-.content img {
-  width: 40%;
-  height: auto;
-  border: 3px solid #A9D6E5;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.topic-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
 }
 
-.content p {
-  flex: 1;
+.topic-card img {
+  max-width: 100%;
+  border-radius: 8px;
 }
 
 /* Footer */
-footer {
-  background: #00509E;
-  color: white;
+.footer {
+  background: #00274D;
+  color: #FFFFFF;
   text-align: center;
   padding: 20px;
 }
 
-footer p {
-  margin: 0;
-}
-
-.social-links {
-  margin-top: 10px;
-}
-
-.social-links a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-  color: #A9D6E5;
-}
-
-/* Buttons (for future enhancements) */
-button {
-  background: #00509E;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-button:hover {
-  background: #A9D6E5;
-  color: #00509E;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .content img {
-    width: 80%;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav-links li {
-    margin: 10px 0;
-  }
-}
-
-@media (max-width: 480px) {
-  #hero h1 {
-    font-size: 2rem;
-  }
+.footer a {
+  color: #FFD700;
+  margin: 0 10px;
 }
