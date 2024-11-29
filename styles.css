@@ -143,8 +143,8 @@ nav ul li a:hover {
   object-fit: cover;
 }
 
-/* Bodhisattvas Section Styling */
-.bodhisattvas-images {
+/* ceramics Section Styling */
+.ceramics-images {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -188,8 +188,8 @@ nav ul li a:hover {
   object-fit: cover;
 }
 
-/* Smithsonian's National Numismatic Collection */
-.bodhisattvas-images {
+/* corals */
+.corals-images {
   display: flex;
   flex-direction: column;
   align-items: center;
