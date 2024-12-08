@@ -3,183 +3,139 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Echoes of the Ancient East - A Journey Through Ancient Civilizations">
-  <title>Echoes of the Ancient East</title>
+  <title>Artifact Showcase</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="https://cdn.jsdelivr.net/npm/@google/model-viewer@1.0.0/dist/model-viewer.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer.min.js" defer></script>
 </head>
 <body>
-  <!-- Header -->
+
+  <!-- Header Section with Navigation -->
   <header>
-    <div class="container">
-      <h1>Echoes of the Ancient East</h1>
-      <nav>
-        <ul>
-          <li><a href="#anyang">Anyang</a></li>
-          <li><a href="#ceramics">Blue and White Ceramics</a></li>
-          <li><a href="#corals">Corals</a></li>
-          <li><a href="#timeline">Timeline</a></li>
-          <li><a href="#culture-insights">Cultural Insights</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Artifacts</a></li>
+        <li><a href="#">Timeline</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Hero Section with Parallax Effect -->
-  <section class="hero parallax">
+  <!-- Hero Image Section -->
+  <section class="hero">
+    <img src= "images/hero.jpg.jpg"Hero Image">
     <div class="hero-text">
-      <h2>Discover Ancient Civilizations</h2>
-      <p>Explore the wonders and history of the Ancient East.</p>
     </div>
   </section>
 
-  <!-- Anyang Section -->
-  <section id="anyang" class="section">
-    <div class="container">
-      <h2>Anyang - The Cradle of Ancient China</h2>
-      <p>Explore Anyang, a pivotal city of the Shang dynasty, often referred to as the cradle of ancient Chinese civilization. Renowned for its oracle bone inscriptions and burial artifacts, it provides a glimpse into early governance, religious practices, and artistic achievements through jade carvings and bronze vessels.</p>
-
-      <!-- Interactive 3D Model Section -->
-      <div class="interactive-artefact">
-        <model-viewer src="models/anyang-site.glb" alt="Anyang Archaeological Site" auto-rotate camera-controls ar></model-viewer>
-      </div>
-
-      <!-- Images Section -->
-      <div class="anyang-images">
-        <div class="main-image">
-          <img src="images/main-anyang-image.jpg" alt="Main Anyang Image" />
+  <!-- Main Section -->
+  <main>
+    <h2>Anyang Echoes: Treasures of the Shang Dynasty</h2>
+      <p>Delve into the history and craftsmanship of ancient civilizations through our curated collection.</p>
+    <!-- Artifact 1 -->
+    <section class="artifact-container">
+      <h2>Ritual Wine Cup (Gu)</h2>
+      <div class="artifact-content">
+        <model-viewer src="model viewer/elephant.ssg" alt="Ancient Vase" auto-rotate camera-controls></model-viewer>
+        <div class="artifact-images">
+          <img src="images/anyang1.png" alt="Ancient Vase Image 1">
+          <img src="images/anyang2.png" alt="Ancient Vase Image 2">
+          <img src="images/anyang3.png" alt="Ancient Vase Image 3">
         </div>
-        <div class="other-images">
-          <div class="image-item">
-            <img src="images/anyang1.jpg" alt="Anyang Artifact 1" />
-          </div>
-          <div class="image-item">
-            <img src="images/anyang2.jpg" alt="Anyang Artifact 2" />
-          </div>
-          <div class="image-item">
-            <img src="images/anyang3.jpg" alt="Anyang Artifact 3" />
-          </div>
-        </div>
+        <p>The Ritual Wine Cup (Gu), adorned with taotie masks, dragons, and snakes, is an extraordinary artifact from ancient China, often associated with the Shang Dynasty, particularly from the late Shang period (around 1300-1046 BCE). The gu is a type of ceremonial vessel used for holding wine or other ritual liquids during important ceremonies, typically involving ancestor worship or offerings to deities.
+
+          <p>Key Features:
+          Shape and Function: The gu is typically a tall, narrow vessel with a flared rim and a wide body. Its elegant and balanced form made it ideal for use in ceremonial contexts. It was often used to serve wine during ritual feasts or other sacred ceremonies.
+          
+          Material: The gu was typically made of bronze, showcasing the advanced metallurgical techniques of the Shang Dynasty. Bronze was highly prized and often used for ritual objects, reflecting both the spiritual and material wealth of the elite class.</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Blue and White Ceramics Section -->
-  <section id="ceramics" class="section">
-    <div class="container">
-      <h2>Blue and White Ceramics</h2>
-      <p>Delve into the 1,500-year tradition of porcelain-making from Jingdezhen, China. During the Kangxi period (1662–1722), the production of blue and white ceramics revolutionized global trade, fueling Chinamania in Europe and strengthening East-West cultural exchange, a legacy that continues today.</p>
-
-      <!-- Interactive 3D Model Section -->
-      <div class="interactive-artefact">
-        <model-viewer src="models/ceramics.glb" alt="Blue and White Ceramics" auto-rotate camera-controls ar></model-viewer>
-      </div>
-
-      <!-- Images Section -->
-      <div class="ceramics-images">
-        <div class="main-image">
-          <img src="images/main-ceramics.jpg" alt="Main Ceramic Image" />
+    <!-- Artifact 2 -->
+    <section class="artifact-container">
+      <h2>Spouted Vessel (He)</h2>
+      <div class="artifact-content">
+        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Medieval Sword" auto-rotate camera-controls></model-viewer>
+        <div class="artifact-images">
+          <img src="images/anyang4.png" alt="Medieval Sword Image 1">
+          <img src="images/anyang5.png" alt="Medieval Sword Image 2">
+          <img src="images/anyang6.png" alt="Medieval Sword Image 3">
         </div>
-        <div class="other-images">
-          <div class="image-item">
-            <img src="images/ceramics1.jpg" alt="Ceramics Artifact 1" />
-          </div>
-          <div class="image-item">
-            <img src="images/ceramics2.jpg" alt="Ceramics Artifact 2" />
-          </div>
-          <div class="image-item">
-            <img src="images/ceramics3.jpg" alt="Ceramics Artifact 3" />
-          </div>
-        </div>
+        <p>The Spouted Vessel (He) in the form of an elephant, adorned with taotie masks, dragons, and snakes, is an extraordinary piece of ancient Chinese art and craftsmanship, often linked to the Shang Dynasty (c. 1600–1046 BCE) or the Zhou Dynasty (c. 1046–256 BCE). This type of vessel is a remarkable example of the ritualistic and symbolic art of ancient China, designed not only for its functional use but also to carry significant spiritual meaning.</p>
+        <p>Key Features:
+          Shape and Function: The he is a type of vessel typically used for holding liquids, especially for ritual purposes. This specific example, shaped like an elephant, would have been an extravagant piece, designed for ceremonial feasts or offerings. The spouted feature allowed for controlled pouring of liquids, possibly wine or other sacred offerings during rituals.
+          
+          Material: Like many other ritual vessels from the Shang and Zhou Dynasties, the he was made from bronze, showcasing advanced casting techniques of the time. Bronze was a highly valued material in ancient China, particularly for ceremonial objects, due to its association with both wealth and spiritual significance.</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Corals Section -->
-  <section id="corals" class="section">
-    <div class="container">
-      <h2>Corals</h2>
-      <p>Experience the vibrant beauty of coral ecosystems through digital preservation. Collaborating with The Hydrous, the Smithsonian digitized coral and reef specimens, offering immersive educational experiences that not only highlight marine biodiversity but also promote conservation efforts for future generations.</p>
-
-      <!-- Interactive 3D Model Section -->
-      <div class="interactive-artefact">
-        <model-viewer src="models/corals.glb" alt="Coral Ecosystem" auto-rotate camera-controls ar></model-viewer>
-      </div>
-
-      <!-- Images Section -->
-      <div class="corals-images">
-        <div class="main-image">
-          <img src="images/main-corals.jpg" alt="Main Coral Image" />
+    <!-- Artifact 3 -->
+    <section class="artifact-container">
+      <h2>Ritual Wine Container (Fangyi)</h2>
+      <div class="artifact-content">
+        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Ancient Statue" auto-rotate camera-controls></model-viewer>
+        <div class="artifact-images">
+          <img src="images/anyang7.png" alt="Ancient Statue Image 1">
+          <img src="images/anyang8.png" alt="Ancient Statue Image 2">
+          <img src="images/anyang9.png" alt="Ancient Statue Image 3">
         </div>
-        <div class="other-images">
-          <div class="image-item">
-            <img src="images/corals1.jpg" alt="Coral Artifact 1" />
-          </div>
-          <div class="image-item">
-            <img src="images/corals2.jpg" alt="Coral Artifact 2" />
-          </div>
-          <div class="image-item">
-            <img src="images/corals3.jpg" alt="Coral Artifact 3" />
-          </div>
-        </div>
+        <p>The Ritual Wine Container (Fangyi) with masks (taotie), serpents, and birds is another magnificent example of ancient Chinese ritual art, often associated with the Shang Dynasty (c. 1600–1046 BCE) or the Zhou Dynasty (c. 1046–256 BCE). This type of vessel was used in ceremonial contexts, particularly for holding wine or other liquids that were offered to deities or ancestors. Its design and motifs carry deep symbolic meaning related to power, protection, and spiritual significance.</p>
+        <p>Key Features:
+          Shape and Function: The fangyi is a type of ritual wine container, characterized by a square or rectangular shape with a broad, flat body and a lid. The vessel would typically be used in ceremonial settings, especially during offerings or sacrifices, where wine would be poured to honor ancestors, gods, or spirits. The shape itself is often associated with ceremonial vessels that emphasize ritual importance and formality.
+          
+          Material: Like many other ritual objects of the time, the fangyi would have been made from bronze, a material valued for its durability and symbolic power. The process of casting these vessels involved highly skilled bronze work, reflecting both the craftsmanship of the era and the importance of such vessels in rituals.</p>
       </div>
-    </div>
-  </section>
+    </section>
+
+  </main>
 
   <!-- Timeline Section -->
-  <section id="timeline" class="section">
-    <div class="container">
-      <h2>Interactive Timeline of Ancient Eastern History</h2>
-      <div class="timeline-container">
-        <div class="timeline-item" data-year="500 BC">
-          <h3>500 BC</h3>
-          <p>Early records of the Shang dynasty emerge from Anyang.</p>
-        </div>
-        <div class="timeline-item" data-year="300 BC">
-          <h3>300 BC</h3>
-          <p>Bodhisattvas begin to appear in Buddhist art.</p>
-        </div>
-        <div class="timeline-item" data-year="100 AD">
-          <h3>100 AD</h3>
-          <p>The influence of Buddhist thought spreads across Asia.</p>
-        </div>
-        <div class="timeline-item" data-year="618-907 AD">
-          <h3>Tang Dynasty</h3>
-          <p>China flourishes as a cultural and economic hub, influencing Japan and Korea.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<section id="timeline">
+  <h2>Timeline of Artifacts</h2>
+  
+  <!-- Ritual Wine Cup (Gu) with Masks, Dragons, and Snakes -->
+  <div class="timeline-event">
+    <h3>Shang Dynasty (c. 1600–1046 BCE): Ritual Wine Cup (Gu) with Masks, Dragons, and Snakes</h3>
+    <p>This <strong>Ritual Wine Cup (Gu)</strong> was used in Shang Dynasty ceremonial offerings. It features intricate <strong>taotie masks</strong>, <strong>dragons</strong>, and <strong>snakes</strong>, representing power, protection, and spiritual transcendence. These symbols were believed to ward off evil spirits and ensure successful rituals connecting with the divine.</p>
+  </div>
+  
+  <!-- Spouted Vessel (He) in the Form of an Elephant -->
+  <div class="timeline-event">
+    <h3>Zhou Dynasty (c. 1046–256 BCE): Spouted Vessel (He) in the Form of an Elephant</h3>
+    <p>The <strong>Spouted Vessel (He)</strong> shaped like an elephant symbolizes strength and power. Adorned with <strong>taotie masks</strong>, <strong>dragons</strong>, and <strong>snakes</strong>, this vessel was used in rituals to communicate with spiritual realms. The elephant form suggests the connection between the earthly and spiritual worlds, enhancing the ritual's power.</p>
+  </div>
+  
+  <!-- Ritual Wine Container (Fangyi) with Masks, Serpents, and Birds -->
+  <div class="timeline-event">
+    <h3>Shang to Zhou Dynasties (c. 1600–256 BCE): Ritual Wine Container (Fangyi) with Masks, Serpents, and Birds</h3>
+    <p>The <strong>Ritual Wine Container (Fangyi)</strong> is adorned with <strong>taotie masks</strong>, <strong>serpents</strong>, and <strong>birds</strong>, symbolizing protection, spiritual transformation, and divine communication. Used during ancestral worship, this artifact reflects the importance of rituals in connecting the physical world with the spiritual realm.</p>
+  </div>
 
-  <!-- Cultural Insights Section -->
-  <section id="culture-insights" class="section">
-    <div class="container">
-      <h2>Cultural Insights from the Ancient East</h2>
-      <p>The Ancient East holds a treasure trove of cultural, artistic, and historical legacies. Here, we explore the remarkable impact of artifacts and philosophies from this region.</p>
-      <div class="insight-item">
-        <h3>Anyang - Gateway to the Shang Dynasty</h3>
-        <p>The ancient city of Anyang provides a unique glimpse into the Shang dynasty. Oracle bones, bronze vessels, and jade carvings discovered here highlight advancements in governance, spirituality, and craftsmanship.</p>
-      </div>
-      <div class="insight-item">
-        <h3>Blue and White Ceramics - The Ming Legacy</h3>
-        <p>These iconic ceramics, perfected during the Ming dynasty, symbolize the peak of Chinese porcelain artistry. Their intricate designs, crafted with cobalt blue on white, became prized exports, influencing global art trends.</p>
-      </div>
-      <div class="insight-item">
-        <h3>Corals - A Symbol of Prosperity</h3>
-        <p>Corals were considered rare treasures in ancient times, often used in jewelry and sacred art. Revered for their vibrant colors, they were believed to symbolize protection and prosperity in East Asian traditions.</p>
-      </div>
-    </div>
-  </section>
+  <!-- Additional Section: Symbolism of Masks and Dragons -->
+  <div class="timeline-event">
+    <h3>Symbolism of Masks and Dragons in Ancient China</h3>
+    <p>In ancient Chinese art, <strong>taotie masks</strong> are believed to protect the wearer or user from malevolent forces, while <strong>dragons</strong> represent power, strength, and divine favor. These motifs frequently appear on ceremonial vessels and artifacts, reflecting the importance of spirituality in daily life and rituals.</p>
+  </div>
 
-  <!-- Footer -->
+  <!-- Additional Section: Role of Elephants in Ancient Chinese Rituals -->
+  <div class="timeline-event">
+    <h3>The Elephant Symbol in Ancient China</h3>
+    <p>Elephants were considered symbols of strength, wisdom, and royal authority in ancient Chinese culture. Their representation in artifacts like the <strong>Spouted Vessel (He)</strong> emphasized the connection between earthly creatures and divine forces, reinforcing the cultural value placed on animals as symbols of power.</p>
+  </div>
+
+  <!-- Additional Section: Evolution of Ritual Vessels -->
+  <div class="timeline-event">
+    <h3>The Evolution of Ritual Vessels in Ancient China</h3>
+    <p>Ritual vessels, such as the <strong>Ritual Wine Cup (Gu)</strong> and <strong>Ritual Wine Container (Fangyi)</strong>, evolved over centuries, becoming more elaborate and sophisticated. These vessels played a crucial role in religious and cultural practices, marking the transition from simple utilitarian objects to sacred symbols of power and spiritual communication.</p>
+  </div>
+  
+</section>
+
+
+  <!-- Footer Section -->
   <footer>
-    <div class="container">
-      <p>&copy; 2024 Echoes of the Ancient East. All Rights Reserved.</p>
-      <ul>
-        <li><a href="mailto:info@echoesoftheancienteast.com">Contact Us</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-      </ul>
-    </div>
+    <p>&copy; 2024 Artifact Showcase. All rights reserved.</p>
   </footer>
 
   <script src="scripts.js"></script>

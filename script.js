@@ -1,34 +1,13 @@
-// Drag-and-drop functionality for virtual exhibition
-const draggableItems = document.querySelectorAll('.item');
-const droppedItems = document.querySelector('.dropped-items');
-
-draggableItems.forEach(item => {
-  item.addEventListener('dragstart', dragStart);
-  item.addEventListener('dragend', dragEnd);
+// Simple lightbox functionality for the image previews
+document.querySelectorAll('.artifact-images img').forEach(image => {
+  image.addEventListener('click', (event) => {
+    const imgSrc = event.target.src;
+    const modal = document.createElement('div');
+    modal.classList.add('lightbox');
+    modal.innerHTML = `<img src="${imgSrc}" alt="Artifact Image"><div class="close">X</div>`;
+    document.body.appendChild(modal);
+    document.querySelector('.close').addEventListener('click', () => {
+      document.body.removeChild(modal);
+    });
+  });
 });
-
-function dragStart(e) {
-  e.dataTransfer.setData('text', e.target.innerText);
-  e.target.style.opacity = '0.5';
-}
-
-function dragEnd(e) {
-  e.target.style.opacity = '1';
-}
-
-droppedItems.addEventListener('dragover', dragOver);
-droppedItems.addEventListener('drop', drop);
-
-function dragOver(e) {
-  e.preventDefault();
-}
-
-function drop(e) {
-  e.preventDefault();
-  const data = e.dataTransfer.getData('text');
-  const newItem = document.createElement('div');
-  newItem.textContent = data;
-  droppedItems.appendChild(newItem);
-}
-
-// Optional: You can add more interactivity for models, events, etc.
