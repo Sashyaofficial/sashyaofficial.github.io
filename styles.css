@@ -10,137 +10,160 @@ body {
   background-color: #f4f4f4;
   color: #333;
   line-height: 1.6;
-}
-
-/* Header */
-header {
-  background: #6a0dad;
-  color: white;
-  padding: 10px 0;
-}
-
-header nav ul {
-  list-style: none;
-  text-align: center;
   margin: 0;
-  padding: 0;
 }
 
-header nav ul li {
-  display: inline;
-  margin: 0 20px;
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
 }
 
-header nav ul li a {
-  color: white;
+.hamburger span {
+  background: #fff;
+  height: 3px;
+  width: 25px;
+  margin: 4px 0;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #6a0dad;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Navigation Menu */
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-menu a {
+  color: #fff;
   text-decoration: none;
-  font-size: 1.2em;
+  padding: 10px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #ffdd57;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #6a0dad;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+
+  .nav-menu.active {
+    display: flex;
+    transform: translateY(0);
+  }
+
+  .nav-menu a {
+    padding: 15px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    gap: 30px;
+  }
 }
 
 /* Hero Section */
 .hero {
   position: relative;
   text-align: center;
-  margin-bottom: 50px;
+  height: 100vh; /* Full viewport height */
+  background-color: rgba(51, 51, 51, 0); /* Transparent */
 }
 
 .hero img {
   width: 100%;
-  height: auto;
-}
-
-.hero-text {
+  height: 100%;
+  object-fit: cover; /* Adjusted to cover entire section */
   position: absolute;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: rgb(0, 0, 0);
-  font-size: 2em;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-}
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Centers text vertically */
-  align-items: center; /* Centers text horizontally */
-  text-align: center; /* Ensures text alignment is centered */
-  padding: 20px; /* Adds some spacing inside the section */
-  margin: 0 auto; /* Ensures main section is centered horizontally */
-  max-width: 800px; /* Optional: Set a maximum width for better readability */
-  line-height: 1.8; /* Improves text spacing for readability */
+  top: 0;
+  left: 0;
+  z-index: -1; /* Keep image behind text */
 }
 
-main h2 {
-  font-size: 2em;
-  color: #6a0dad;
-  margin-bottom: 10px; /* Adds spacing below the heading */
-}
-
-main p {
-  font-size: 1.2em;
-  color: #555;
-}
-
-/* Style for artifact containers */
-.artifact-container {
-  max-width: 800px; /* Restricts the width for readability */
-  margin: 40px auto; /* Centers the container */
-  padding: 20px;
-  border: 1px solid #e0e0e0;
-  border-radius: 10px;
-  background-color: #f9f9f9;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Artifact content styling */
-.artifact-content {
-  text-align: center; /* Centers content horizontally */
-}
-
-.artifact-container {
-  max-width: 1000px; /* Increased width to fit larger images */
-  margin: 40px auto; /* Centers the container */
-  padding: 20px;
-  border: 1px solid #e0e0e0;
-  border-radius: 10px;
-  background-color: #f9f9f9;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  display: flex; /* Added flex to organize content neatly */
-  flex-direction: column;
-  align-items: center; /* Centers content horizontally */
-}
-
-.artifact-images {
-  display: flex;
-  justify-content: center;
-  gap: 20px; /* Adds spacing between images */
-  flex-wrap: wrap; /* Allows images to wrap if needed */
-  margin: 20px 0;
-}
-
-.artifact-images img {
-  width: 400px; /* Adjusted image size for larger display */
-  height: 400px;
-  object-fit: cover;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-}
-
-
-/* Style for the model-viewer */
 model-viewer {
-  width: 600px;
-  height: 600px;
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
   display: block;
-  margin: 0 auto 20px; /* Centers the viewer and adds space below */
+  transition: transform 0.3s ease;
 }
 
-/* Style for the static images */
+model-viewer:hover {
+  transform: scale(1.05);
+}
+
+/* Artifact Containers */
+.artifact-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Ensures text is centered */
+}
+
 .artifact-images {
   display: flex;
   justify-content: center;
-  gap: 15px; /* Adds spacing between images */
+  gap: 20px;
+  flex-wrap: wrap;
   margin: 20px 0;
 }
 
@@ -152,11 +175,38 @@ model-viewer {
   border-radius: 8px;
 }
 
+@media (max-width: 768px) {
+  .artifact-container {
+    width: 90%;
+  }
+
+  .artifact-images {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .artifact-images img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Footer */
+footer {
+  background: #6a0dad;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 50px;
+  width: 100%;
+}
+
 /* Timeline Section */
 #timeline {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
   flex-direction: column;
   margin-top: 50px;
@@ -167,7 +217,13 @@ model-viewer {
   border-left: 5px solid #6a0dad;
   margin: 20px 0;
   padding: 20px;
-  width: 80%; /* Adjust the width to your needs */
+  width: 80%;
+  text-align: left; /* Ensures text is in the left */
+  transition: box-shadow 0.3s ease;
+}
+
+.timeline-event:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .timeline-event h3 {
@@ -180,34 +236,15 @@ model-viewer {
   font-size: 1em;
 }
 
-/* Footer Section */
-footer {
-  background: #6a0dad;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  margin-top: 50px;
-  width: 100%;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .artifact-container {
+@media (max-width: 480px) {
+  .timeline-event {
     width: 90%;
   }
-
-  .artifact-images {
-    flex-direction: column;
-  }
 }
 
-@media (max-width: 480px) {
-  header nav ul li {
-    display: block;
-    margin: 10px 0;
-  }
-
-  .hero-text {
-    font-size: 1.5em;
-  }
+/* Color Variables */
+:root {
+  --primary-color: #6a0dad;
+  --secondary-color: #f4f4f4;
+  --text-color: #333;
 }

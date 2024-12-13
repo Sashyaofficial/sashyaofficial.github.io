@@ -1,13 +1,25 @@
-// Simple lightbox functionality for the image previews
-document.querySelectorAll('.artifact-images img').forEach(image => {
-  image.addEventListener('click', (event) => {
-    const imgSrc = event.target.src;
-    const modal = document.createElement('div');
-    modal.classList.add('lightbox');
-    modal.innerHTML = `<img src="${imgSrc}" alt="Artifact Image"><div class="close">X</div>`;
-    document.body.appendChild(modal);
-    document.querySelector('.close').addEventListener('click', () => {
-      document.body.removeChild(modal);
+// Hamburger Menu Toggle
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('nav ul');
+
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
+// Smooth Scrolling for Navigation Links
+const navLinks = document.querySelectorAll('nav ul li a');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    const targetId = link.getAttribute('href').substring(1);
+    const targetElement = document.getElementById(targetId);
+
+    window.scrollTo({
+      top: targetElement.offsetTop - 60, // Adjust for fixed header
+      behavior: 'smooth'
     });
+
+    // Close the menu after clicking a link in mobile view
+    navMenu.classList.remove('active');
   });
 });

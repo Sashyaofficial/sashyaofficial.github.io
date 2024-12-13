@@ -5,50 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Artifact Showcase</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer.min.js" defer></script>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 <body>
 
-  <!-- Header Section with Navigation -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Artifacts</a></li>
-        <li><a href="#">Timeline</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- Navbar -->
+<div class="navbar">
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <nav class="nav-menu" id="nav-menu">
+    <a href="#">Home</a>
+    <a href="#">Artifacts</a>
+    <a href="#">Timeline</a>
+  </nav>
+</div>
 
-  <!-- Hero Image Section -->
-  <section class="hero">
-    <img src= "images/hero.jpg.jpg"Hero Image">
-    <div class="hero-text">
-    </div>
-  </section>
+<!-- Hero Section -->
+<section class="hero">
+  <img src="images/hero.png" alt="Hero Image">
+  <div class="hero-text">
+  </div>
+</section>
 
-  <!-- Main Section -->
-  <main>
-    <h2>Anyang Echoes: Treasures of the Shang Dynasty</h2>
-      <p>Delve into the history and craftsmanship of ancient civilizations through our curated collection.</p>
     <!-- Artifact 1 -->
     <section class="artifact-container">
-      <h2>Ritual Wine Cup (Gu)</h2>
+      <h2>Ritual wine container (fangyi) with masks(taotie), serpents, and birds</h2>
       <div class="artifact-content">
-        <model-viewer src="model viewer/elephant.ssg" alt="Ancient Vase" auto-rotate camera-controls></model-viewer>
+        <model-viewer src="assets/wine-container.glb" alt="3D Model" 
+        ar 
+        auto-rotate 
+        camera-controls>
+      </model-viewer>
+
+
+      </model-viewer>
         <div class="artifact-images">
           <img src="images/anyang1.png" alt="Ancient Vase Image 1">
           <img src="images/anyang2.png" alt="Ancient Vase Image 2">
           <img src="images/anyang3.png" alt="Ancient Vase Image 3">
         </div>
-        <p>The Ritual Wine Cup (Gu), adorned with taotie masks, dragons, and snakes, is an extraordinary artifact from ancient China, often associated with the Shang Dynasty, particularly from the late Shang period (around 1300-1046 BCE). The gu is a type of ceremonial vessel used for holding wine or other ritual liquids during important ceremonies, typically involving ancestor worship or offerings to deities.
-
-          <p>Key Features:
-          Shape and Function: The gu is typically a tall, narrow vessel with a flared rim and a wide body. Its elegant and balanced form made it ideal for use in ceremonial contexts. It was often used to serve wine during ritual feasts or other sacred ceremonies.
-          
-          Material: The gu was typically made of bronze, showcasing the advanced metallurgical techniques of the Shang Dynasty. Bronze was highly prized and often used for ritual objects, reflecting both the spiritual and material wealth of the elite class.</p>
+        <p>Ritual wine container (fangyi) with masks(taotie), serpents, and birds, adorned with taotie masks, dragons, and snakes, is an extraordinary artifact from ancient China, often associated with the Shang Dynasty, particularly from the late Shang period (around 1300-1046 BCE). The gu is a type of ceremonial vessel used for holding wine or other ritual liquids during important ceremonies, typically involving ancestor worship or offerings to deities.</p>
+        <p><strong>Key Features:</strong></p>
+        <p><strong>Shape and Function:</strong> The fangyi is a type of ritual wine container, characterized by a square or rectangular shape with a broad, flat body and a lid. The vessel would typically be used in ceremonial settings, especially during offerings or sacrifices, where wine would be poured to honor ancestors, gods, or spirits. The shape itself is often associated with ceremonial vessels that emphasize ritual importance and formality..</p>
+        <p><strong>Material:</strong> Like many other ritual objects of the time, the fangyi would have been made from bronze, a material valued for its durability and symbolic power. The process of casting these vessels involved highly skilled bronze work, reflecting both the craftsmanship of the era and the importance of such vessels in rituals.</p>
       </div>
     </section>
 
@@ -56,38 +58,45 @@
     <section class="artifact-container">
       <h2>Spouted Vessel (He)</h2>
       <div class="artifact-content">
-        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Medieval Sword" auto-rotate camera-controls></model-viewer>
+        <model-viewer src="assets/newelephant.glb" alt="3D Model" 
+        ar 
+        auto-rotate 
+        camera-controls>
+      </model-viewer>
+
         <div class="artifact-images">
-          <img src="images/anyang4.png" alt="Medieval Sword Image 1">
-          <img src="images/anyang5.png" alt="Medieval Sword Image 2">
-          <img src="images/anyang6.png" alt="Medieval Sword Image 3">
+          <img src="images/anyang4.png" alt="Spouted Vessel Image 1">
+          <img src="images/anyang5.png" alt="Spouted Vessel Image 2">
+          <img src="images/anyang6.png" alt="Spouted Vessel Image 3">
         </div>
         <p>The Spouted Vessel (He) in the form of an elephant, adorned with taotie masks, dragons, and snakes, is an extraordinary piece of ancient Chinese art and craftsmanship, often linked to the Shang Dynasty (c. 1600–1046 BCE) or the Zhou Dynasty (c. 1046–256 BCE). This type of vessel is a remarkable example of the ritualistic and symbolic art of ancient China, designed not only for its functional use but also to carry significant spiritual meaning.</p>
-        <p>Key Features:
-          Shape and Function: The he is a type of vessel typically used for holding liquids, especially for ritual purposes. This specific example, shaped like an elephant, would have been an extravagant piece, designed for ceremonial feasts or offerings. The spouted feature allowed for controlled pouring of liquids, possibly wine or other sacred offerings during rituals.
-          
-          Material: Like many other ritual vessels from the Shang and Zhou Dynasties, the he was made from bronze, showcasing advanced casting techniques of the time. Bronze was a highly valued material in ancient China, particularly for ceremonial objects, due to its association with both wealth and spiritual significance.</p>
+        <p><strong>Key Features:</strong></p>
+        <p><strong>Shape and Function:</strong> The he is a type of vessel typically used for holding liquids, especially for ritual purposes. This specific example, shaped like an elephant, would have been an extravagant piece, designed for ceremonial feasts or offerings. The spouted feature allowed for controlled pouring of liquids, possibly wine or other sacred offerings during rituals.</p>
+        <p><strong>Material:</strong> Like many other ritual vessels from the Shang and Zhou Dynasties, the he was made from bronze, showcasing advanced casting techniques of the time. Bronze was a highly valued material in ancient China, particularly for ceremonial objects, due to its association with both wealth and spiritual significance.</p>
       </div>
     </section>
 
     <!-- Artifact 3 -->
     <section class="artifact-container">
-      <h2>Ritual Wine Container (Fangyi)</h2>
+      <h2>Ritual wine ewer (gong) with masks (taotie), dragons, and real animals</h2>
       <div class="artifact-content">
-        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="Ancient Statue" auto-rotate camera-controls></model-viewer>
+        <model-viewer src="assets/wine-ewer.glb" alt="3D Model" 
+        ar 
+        auto-rotate 
+        camera-controls>
+      </model-viewer>
+
         <div class="artifact-images">
-          <img src="images/anyang7.png" alt="Ancient Statue Image 1">
-          <img src="images/anyang8.png" alt="Ancient Statue Image 2">
-          <img src="images/anyang9.png" alt="Ancient Statue Image 3">
+          <img src="images/anyang7.png" alt="Ritual Wine Container Image 1">
+          <img src="images/anyang8.png" alt="Ritual Wine Container Image 2">
+          <img src="images/anyang9.png" alt="Ritual Wine Container Image 3">
         </div>
-        <p>The Ritual Wine Container (Fangyi) with masks (taotie), serpents, and birds is another magnificent example of ancient Chinese ritual art, often associated with the Shang Dynasty (c. 1600–1046 BCE) or the Zhou Dynasty (c. 1046–256 BCE). This type of vessel was used in ceremonial contexts, particularly for holding wine or other liquids that were offered to deities or ancestors. Its design and motifs carry deep symbolic meaning related to power, protection, and spiritual significance.</p>
-        <p>Key Features:
-          Shape and Function: The fangyi is a type of ritual wine container, characterized by a square or rectangular shape with a broad, flat body and a lid. The vessel would typically be used in ceremonial settings, especially during offerings or sacrifices, where wine would be poured to honor ancestors, gods, or spirits. The shape itself is often associated with ceremonial vessels that emphasize ritual importance and formality.
-          
-          Material: Like many other ritual objects of the time, the fangyi would have been made from bronze, a material valued for its durability and symbolic power. The process of casting these vessels involved highly skilled bronze work, reflecting both the craftsmanship of the era and the importance of such vessels in rituals.</p>
+        <p>Ritual wine ewer (gong) with masks (taotie), dragons, and real animals, serpents, and birds is another magnificent example of ancient Chinese ritual art, often associated with the Shang Dynasty (c. 1600–1046 BCE) or the Zhou Dynasty (c. 1046–256 BCE). This type of vessel was used in ceremonial contexts, particularly for holding wine or other liquids that were offered to deities or ancestors. Its design and motifs carry deep symbolic meaning related to power, protection, and spiritual significance.</p>
+        <p><strong>Key Features:</strong></p>
+        <p><strong>Shape and Function:</strong> The Ritual Wine Ewer (Gong) with masks, dragons, and real animals is an important artifact from ancient China, particularly associated with the Shang dynasty (c. 1600–1046 BCE), though it was also produced in later periods such as the Zhou dynasty. </p>
+        <p><strong>Material:</strong> Like many other ritual objects of the time, the ewer would have been made from bronze, a material valued for its durability and symbolic power. The process of casting these vessels involved highly skilled bronze work, reflecting both the craftsmanship of the era and the importance of such vessels in rituals.</p>
       </div>
     </section>
-
   </main>
 
   <!-- Timeline Section -->
@@ -131,6 +140,12 @@
   </div>
   
 </section>
+<script>
+  // JavaScript to toggle the mobile navigation menu
+  document.querySelector('.hamburger').addEventListener('click', function() {
+    document.querySelector('.nav-menu').classList.toggle('active');
+  });
+</script>
 
 
   <!-- Footer Section -->
@@ -138,6 +153,6 @@
     <p>&copy; 2024 Artifact Showcase. All rights reserved.</p>
   </footer>
 
-  <script src="scripts.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
